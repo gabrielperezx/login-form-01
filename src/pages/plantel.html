@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="shortcut icon" href="../images/favicon.png" type="image/x-icon" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.1.0/css/fontawesome.min.css"
+        />
+        <link rel="stylesheet" href="../css/estilos.min.css" />
+        <script src="https://www.google.com/recaptcha/api.js"></script>
+        <title>Login - Administrativo</title>
+    </head>
+    <body>
+        <main
+            class="bg-image min-vh-100 d-flex align-items-center"
+            style="
+                --bg-image: url(https://asistescolar.com/cae/images/admin/portada/p1.jpg);
+            "
+        >
+            <div class="container">
+                <div
+                    class="row row-cols-1 row-cols-lg-2 bg-white shadow-lg g-0 rounded-5 overflow-hidden"
+                >
+                    <div
+                        class="col d-none d-lg-block bg-image"
+                        style="
+                            --bg-image: url(https://asistescolar.com/cae/images/plantel/30/galeria/8321.jpeg);
+                        "
+                    ></div>
+                    <div class="col">
+                        <div class="p-5">
+                            <form class="mb-4">
+                                <h1 class="h4 mb-4">
+                                    <i class="fas fa-user mr-2"></i>Iniciar Sesión
+                                </h1>
+
+                                <div class="mb-3">
+                                    <label for="txtUsuario" class="form-label"
+                                        >Nombre de usuario</label
+                                    >
+                                    <div class="input-group">
+                                        <input
+                                            name="txtUsuario"
+                                            id="txtUsuario"
+                                            type="text"
+                                            class="form-control"
+                                            placeholder="Nombre de usuario"
+                                            required
+                                        />
+                                        <span class="input-group-text">
+                                            <i class="fas fa-user"></i>
+                                        </span>
+                                    </div>
+                                </div>
+
+                                <div class="mb-3">
+                                    <label for="txtContrasena" class="form-label"
+                                        >Contraseña</label
+                                    >
+                                    <div class="input-group">
+                                        <input
+                                            name="txtContrasena"
+                                            id="txtContrasena"
+                                            type="password"
+                                            class="form-control"
+                                            placeholder="Contraseña"
+                                            required
+                                        />
+                                        <span class="input-group-text">
+                                            <i class="fas fa-lock"></i>
+                                        </span>
+                                    </div>
+                                </div>
+
+                                <div class="mb-3">
+                                    <label for="cmbPeriodo" class="form-label"
+                                        ><strong>Período:</strong></label
+                                    >
+                                    <select id="cmbPeriodo" class="form-select">
+                                        <option value="0">
+                                            -- SELECCIONE PERÍODO --
+                                        </option>
+                                        <option value="19201">2019 - 2020</option>
+                                        <option value="2021">2020 - 2021</option>
+                                        <option value="2122">2021 - 2022</option>
+                                        <option value="2223">2022 - 2023</option>
+                                        <option value="2324">2023 - 2024</option>
+                                        <option value="2425">2024 - 2025</option>
+                                        <option value="2526">2025 - 2026</option>
+                                    </select>
+                                </div>
+
+                                <button type="button" class="btn btn-info w-100 mt-2">
+                                    Iniciar Sesión
+                                </button>
+                            </form>
+
+                            <div class="text-center mt-4">
+                                <a
+                                    href="http://asistescolar.com"
+                                    class="text-muted text-decoration-none"
+                                >
+                                    2021 Asistescolar
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <script src="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.1.0/js/all.min.js"></script>
+    </body>
+</html>

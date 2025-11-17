@@ -1,3 +1,14 @@
+.bg-image {
+    background-image: var(--bg-image);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &.bg-image-contain {
+        background-size: 100% 100%;
+    }
+}
+
 .bg-parallax {
     background-image: var(--bg-image);
     background-attachment: fixed;
@@ -13,6 +24,8 @@
 .social-links {
     display: flex;
     gap: 10px;
+    justify-content: end;
+
     a {
         display: flex;
         align-items: center;
@@ -23,6 +36,7 @@
         background-color: $primary;
         color: $white;
         transition: all 0.3s ease;
+
         &:hover {
             background-color: $dark;
         }
@@ -30,4 +44,9 @@
 }
 
 @media (max-width: 768px) {
+    .bg-image {
+        &.bg-image-h-200 {
+            height: 200px;
+        }
+    }
 }

@@ -18,82 +18,43 @@
         <title>Login Form</title>
     </head>
     <body>
-        <main class="bg-light p-lg-5 vh-100">
+        <main
+            class="bg-image min-vh-100 d-flex align-items-center justify-content-center"
+            style="
+                --bg-image: url('https://asistescolar.com/cae/images/admin/portada/p1.jpg');
+            "
+        >
             <div
-                class="row row-cols-1 row-cols-lg-2 bg-white shadow-lg g-0 rounded-4 overflow-hidden h-100"
+                class="d-flex flex-column justify-content-center align-items-center gap-4"
             >
-                <div class="col">
-                    <div class="bg-primary h-100 w-100"></div>
-                </div>
-                <div class="col">
-                    <div class="px px-lg-7 py-6">
-                        <form>
-                            <h1 class="h4">Iniciar sesión</h1>
-                            <div class="mb-3">
-                                <label for="correo" class="form-label"
-                                    >Correo electrónico</label
-                                >
-                                <input
-                                    type="email"
-                                    class="form-control"
-                                    id="correo"
-                                    aria-describedby="emailHelp"
-                                />
-                            </div>
-                            <div class="mb-3">
-                                <label for="clave" class="form-label">Contraseña</label>
-                                <input type="password" class="form-control" id="clave" />
-                            </div>
-                            <div
-                                class="row row-cols-1 row-cols-lg-2 g-0 align-items-center justify-content-center"
-                            >
-                                <div class="col">
-                                    <div class="form-check">
-                                        <input
-                                            type="checkbox"
-                                            class="form-check-input"
-                                            id="guardarS"
-                                        />
-                                        <label class="form-check-label" for="guardarS"
-                                            >Guardar sesión</label
-                                        >
-                                    </div>
-                                </div>
-                                <div class="col">
-                                    <a
-                                        class="fs-7 link-primary text-decoration-none"
-                                        href="#"
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                    >
-                                        <i class="fa-solid fa-lock"></i>
-                                        ¿Olvidaste la contraseña?
-                                    </a>
-                                </div>
-                            </div>
-                            <button type="submit" class="btn btn-primary">Submit</button>
-                        </form>
-
-                        <div class="social-links">
-                            <a
-                                href="https://facebook.com"
-                                target="_blank"
-                                title="Facebook"
-                            >
-                                <i class="fab fa-facebook-f"></i>
-                            </a>
-                            <a href="#" title="WhatsApp">
-                                <i class="fab fa-whatsapp"></i>
-                            </a>
-                            <a href="#" title="Instagram">
-                                <i class="fab fa-instagram"></i>
-                            </a>
-                            <a href="#" title="Twitter">
-                                <i class="fab fa-twitter"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
+                <a
+                    href="./src/pages/plantel.html"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="btn btn-primary w-100"
+                    >Plantel</a
+                >
+                <a
+                    href="./src/pages/personal.html"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="btn btn-primary w-100"
+                    >Personal</a
+                >
+                <a
+                    href="./src/pages/estudiante.html"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="btn btn-primary w-100"
+                    >Estudiante</a
+                >
+                <a
+                    href="./src/pages/representante.html"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="btn btn-primary w-100"
+                    >Representante</a
+                >
             </div>
         </main>
         <script src="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.1.0/js/all.min.js"></script>
