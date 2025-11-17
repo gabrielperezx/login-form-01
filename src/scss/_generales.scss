@@ -21,6 +21,23 @@
     }
 }
 
+.form-radius-input {
+    .form-control {
+        border-top-left-radius: 50rem;
+        border-bottom-left-radius: 50rem;
+    }
+    .input-group-text {
+        border-top-right-radius: 50rem;
+        border-bottom-right-radius: 50rem;
+    }
+    .form-select {
+        border-radius: 50rem;
+    }
+    .btn {
+        border-radius: 50rem;
+    }
+}
+
 .social-links {
     display: flex;
     gap: 10px;
