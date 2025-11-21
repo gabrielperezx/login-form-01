@@ -19,104 +19,117 @@
         <title>Login - Estudiantes</title>
     </head>
     <body>
-        <main
-            class="bg-image min-vh-100 d-flex align-items-center"
-            style="
-                --bg-image: url(https://asistescolar.com/cae/images/admin/portada/p4.jpg);
-            "
-        >
-            <div class="container padding-form">
-                <div
-                    class="row row-cols-1 row-cols-lg-2 bg-white shadow-lg g-0 rounded-3 overflow-hidden"
+        <main class="row bg-white g-0 min-vh-100">
+            <div
+                class="col-12 col-lg-6 bg-image position-relative"
+                style="--bg-image: url('../images/fondo_loginSAEWeb.png')"
+            >
+                <!-- Contenedor nuevo para el enlace SAE Sistema Web -->
+                <a
+                    href="https://asistescolar.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="float-SAE"
                 >
-                    <div
-                        class="col d-none d-lg-block bg-image"
-                        style="
-                            --bg-image: url(https://asistescolar.com/cae/images/plantel/30/galeria/8321.jpeg);
-                        "
-                    ></div>
-                    <div class="col">
-                        <div class="p-5">
-                            <div class="px-6 mb-3">
-                                <img
-                                    src="../images/logo-SAE.png"
-                                    alt=""
-                                    class="img-fluid"
-                                />
-                            </div>
+                    <i class="fas fa-globe me-2 fs-5"></i>
+                    <div class="d-flex flex-column">
+                        <span class="fw-bold">SAE</span>
+                        <small>SISTEMA WEB</small>
+                    </div>
+                </a>
+            </div>
+            <div class="col-12 col-lg-6">
+                <div class="form-container py-5 px-3 px-md-4 px-lg-8">
+                    <div class="px-lg-5 mb-3">
+                        <img src="../images/logo-SAE.png" alt="" class="img-fluid" />
+                    </div>
+                    <h1 class="h4 mb-4 text-center">Iniciar Sesión - Estudiante</h1>
+                    <form class="mb-5 form-radius-input">
+                        <div class="mb-3">
+                            <input
+                                name="txtUsuario"
+                                id="txtUsuario"
+                                type="text"
+                                class="form-control"
+                                placeholder="Nombre de usuario"
+                                required
+                            />
+                        </div>
 
-                            <h1 class="h4 mb-4 text-center">
-                                Iniciar Sesión - Estudiante
-                            </h1>
+                        <div class="mb-3">
+                            <input
+                                type="password"
+                                class="form-control"
+                                placeholder="Contraseña"
+                                required
+                            />
+                        </div>
 
-                            <form class="mb-5 form-radius-input">
-                                <div class="mb-3">
-                                    <input
-                                        name="txtUsuario"
-                                        id="txtUsuario"
-                                        type="text"
-                                        class="form-control"
-                                        placeholder="Nombre de usuario"
-                                        required
-                                    />
-                                </div>
+                        <div class="d-flex justify-content-end mb-2">
+                            <a
+                                href="recuperar.php?idp=30"
+                                class="text-decoration-none link-primary small"
+                            >
+                                ¿Olvidó su contraseña?
+                            </a>
+                        </div>
 
-                                <div class="mb-3">
-                                    <input
-                                        name="txtContrasena"
-                                        id="txtContrasena"
-                                        type="password"
-                                        class="form-control"
-                                        placeholder="Contraseña"
-                                        required
-                                    />
-                                </div>
-                                <div class="d-flex justify-content-end mb-2">
-                                    <a
-                                        href="recuperar.php?idp=30"
-                                        class="text-decoration-none link-primary small"
-                                    >
-                                        ¿Olvidó su contraseña?
-                                    </a>
-                                </div>
-
-                                <button
-                                    type="button"
-                                    class="btn btn-primary w-100 mt-2 text-white"
-                                >
-                                    Iniciar Sesión
-                                </button>
-                            </form>
-
-                            <div class="social-links">
+                        <button
+                            type="button"
+                            class="btn btn-primary w-100 mt-2 text-white"
+                        >
+                            Iniciar Sesión
+                        </button>
+                    </form>
+                    <div class="bg-primary p-4 rounded-3 text-white text-center mb-3">
+                        <p class="fw-bold fs-5 mb-0">¡Descubre la App SAE Profesor</p>
+                        <p class="mb-3">Descargala gratis</p>
+                        <div class="row g-2">
+                            <div class="col-12 col-lg-6">
                                 <a
-                                    href="https://facebook.com"
-                                    target="_blank"
-                                    title="Facebook"
-                                >
-                                    <i class="fab fa-facebook-f"></i>
-                                </a>
-                                <a href="#" title="WhatsApp">
-                                    <i class="fab fa-whatsapp"></i>
-                                </a>
-                                <a href="#" title="Instagram">
-                                    <i class="fab fa-instagram"></i>
-                                </a>
-                                <a href="#" title="Twitter">
-                                    <i class="fab fa-twitter"></i>
-                                </a>
-                            </div>
-
-                            <div class="d-flex justify-content-center">
-                                <a
-                                    href="https://asistescolar.com/"
+                                    href="https://play.google.com/store/games?hl=es_VE"
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    class="text-decoration-none"
-                                    >AsistEscolar 2025</a
                                 >
+                                    <img
+                                        src="../images/button-google-play.png"
+                                        alt="Google Play"
+                                        class="img-fluid store-btn"
+                                    />
+                                </a>
+                            </div>
+                            <div class="col-12 col-lg-6">
+                                <a
+                                    href="https://www.apple.com/la/app-store/"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    <img
+                                        src="../images/button-app-store.png"
+                                        alt="App Store"
+                                        class="img-fluid store-btn"
+                                    />
+                                </a>
                             </div>
                         </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://facebook.com" target="_blank" title="Facebook"
+                            ><i class="fab fa-facebook-f"></i
+                        ></a>
+                        <a href="#" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <a
+                            href="https://asistescolar.com/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="text-decoration-none"
+                        >
+                            AsistEscolar 2025
+                        </a>
                     </div>
                 </div>
             </div>
