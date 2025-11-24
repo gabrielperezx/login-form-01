@@ -39,13 +39,16 @@
                 </a>
             </div>
             <div class="col-12 col-lg-6">
-                <div class="form-container py-5 px-3 px-md-4 px-lg-8">
+                <div class="form-container py-5">
                     <div class="px-lg-5 mb-3">
                         <img src="../images/logo-SAE.png" alt="" class="img-fluid" />
                     </div>
                     <h1 class="h4 mb-4 text-center">Iniciar Sesión - Representante</h1>
                     <form class="mb-5">
                         <div class="mb-3">
+                            <label for="txtUsuario" class="form-label"
+                                >Nombre de usuario</label
+                            >
                             <input
                                 name="txtUsuario"
                                 id="txtUsuario"
@@ -56,6 +59,9 @@
                             />
                         </div>
                         <div class="mb-3">
+                            <label for="txtContrasena" class="form-label"
+                                >Contraseña</label
+                            >
                             <input
                                 name="txtContrasena"
                                 id="txtContrasena"
@@ -82,31 +88,26 @@
                     </form>
 
                     <div class="mb-4">
-                        <label class="form-label mb-2"
-                            ><strong>¿Representante - Nuevo Ingreso?</strong></label
+                        <label for="txtCodigo_inscripcion" class="form-label"
+                            >¿Representante - Nuevo Ingreso?</label
                         >
                         <input
                             name="txtCodigo_inscripcion"
                             id="txtCodigo_inscripcion"
                             type="password"
-                            class="form-control rounded-pill mb-2"
+                            class="form-control mb-2"
                             placeholder="Código de Inscripción"
                         />
-                        <button
-                            type="button"
-                            class="btn btn-primary rounded-pill w-100 text-white"
-                        >
+                        <button type="button" class="btn btn-primary w-100 text-white">
                             Registrate AQUÍ
                         </button>
                     </div>
 
                     <div class="mb-5">
-                        <label class="form-label mb-2"
-                            ><strong>¿Optas por un cupo?</strong></label
-                        >
+                        <label class="form-label mb-2">¿Optas por un cupo?</label>
                         <a
                             href="view/cursosc.php?idp=30"
-                            class="btn btn-primary w-100 rounded-pill text-white"
+                            class="btn btn-primary w-100 text-white"
                             >Solicitud de Cupo</a
                         >
                     </div>

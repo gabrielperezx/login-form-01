@@ -35,25 +35,23 @@
 
 // Contenedor del formulario para móviles
 .form-container {
+    // Para tablets y laptops: menos padding horizontal
+    padding-left: 2rem;
+    padding-right: 2rem;
+
     @include media-breakpoint-down(lg) {
         background: white;
-        border-radius: 15px;
+        border-radius: 14px;
         margin: 1rem;
         box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
         position: relative;
         z-index: 4;
     }
 
-    @include media-breakpoint-up(lg) {
-        // Para tablets y laptops: menos padding horizontal
-        padding-left: 2rem;
-        padding-right: 2rem;
-    }
-
     @include media-breakpoint-up(xl) {
         // Para pantallas grandes: padding normal
-        padding-left: 3rem;
-        padding-right: 3rem;
+        padding-left: 20%;
+        padding-right: 20%;
     }
 }
 

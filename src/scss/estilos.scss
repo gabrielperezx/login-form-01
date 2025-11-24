@@ -17,11 +17,3 @@
         min-height: 100vh;
     }
 }
-
-// Ajustes específicos para tablets
-@include media-breakpoint-only(lg) {
-    .form-container {
-        padding-left: 1.5rem !important;
-        padding-right: 1.5rem !important;
-    }
-}
